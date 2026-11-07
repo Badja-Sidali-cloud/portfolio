@@ -1,0 +1,97 @@
+/* All visible text lives here. `fr` and `ar` are typed against `en`, so a missing key is a compile error. */
+
+const en = {
+  title: 'Badja Sidali – Computer Science Student',
+  desc: 'Badja Sidali is a second-year computer science student at USTHB, Algiers, and an aspiring software engineer.',
+  skip: 'Skip to content', nav_aria: 'Main', nb: 'Badja Sidali',
+  nav_about: 'About', nav_work: 'Work', nav_contact: 'Contact',
+  theme: 'Toggle theme', lang_aria: 'Language',
+  n1: 'Badja', n2: 'Sidali',
+  role: 'Computer Science Student | Aspiring Software Engineer',
+  intro: 'I’m a second-year CS student at USTHB in Algiers, exploring software engineering and UI/UX design.',
+  btn_work: 'See my work', btn_contact: 'Contact me',
+  alt: 'Portrait of Badja Sidali', caption: 'Algiers, 2026',
+  about_h: 'About',
+  about_1: 'I’m Badja Sidali, a second-year Computer Science student at USTHB, Algiers, working towards becoming a software engineer.',
+  about_2: 'I’m currently building my skills in web development while exploring other areas that interest me, especially UI/UX design and video editing. I also enjoy communicating, sharing ideas and working with people, which is something I’ve developed through student clubs and team projects.',
+  about_3: 'I believe there’s always something new to learn, and I like learning by trying things out, collaborating with others and turning ideas into something real.',
+  nav_stack: 'Stack', stack_h: 'Tech stack', stack_p: 'What I use to learn and build.',
+  work_h: 'Work', tag1: '1st place',
+  w1_d: 'A game-style way for beginners to learn tech. I handled the design and the final presentation. We took first place.',
+  w2_d: 'A concept for one platform that links scientific clubs from universities across Algeria. I was a UI/UX designer on the CodeIT team during GIP.',
+  w3_m: 'UI/UX Design · Solo Hackathon Project · Visual Hack',
+  w3_d: 'A food delivery app concept I designed during Visual Hack, a UI/UX and design hackathon organized by CSE. I independently designed the app interfaces and built an interactive prototype using Figma.',
+  w4_t: 'Other design work', w4_d: 'A few smaller visual pieces for SEC and CSE.', w4_link: 'View on Behance →',
+  w5_t: 'This portfolio', w5_d: 'The site you’re on. Built with React, TypeScript and Vite, with help from AI tools while I learn front-end development.', w5_link: 'View source on GitHub →',
+  contact_h: 'Contact', contact_p: 'Write to me or find me on any of these.',
+  c_email: 'Email', copy: '© {y} Badja Sidali',
+  copy_btn: 'Copy email address', copied: 'Email address copied',
+  dot_aria: 'Mouloudia', paw_aria: 'A small cat paw', star_aria: 'A short dhikr',
+  dk_label: 'A reminder', dk_next: 'Another dhikr', dk_close: 'Close'
+} as const;
+
+export type Dict = { [K in keyof typeof en]: string };
+export type Lang = 'en' | 'fr' | 'ar';
+
+const fr: Dict = {
+  title: 'Badja Sidali – Étudiant en informatique',
+  desc: 'Badja Sidali est étudiant en deuxième année d’informatique à l’USTHB (Alger) et futur ingénieur logiciel.',
+  skip: 'Aller au contenu', nav_aria: 'Navigation principale', nb: 'Badja Sidali',
+  nav_about: 'À propos', nav_work: 'Projets', nav_contact: 'Contact',
+  theme: 'Changer de thème', lang_aria: 'Langue',
+  n1: 'Badja', n2: 'Sidali',
+  role: 'Étudiant en informatique | Futur ingénieur logiciel',
+  intro: 'Étudiant en deuxième année d’informatique à l’USTHB (Alger), j’explore l’ingénierie logicielle et le design UI/UX.',
+  btn_work: 'Voir mes projets', btn_contact: 'Me contacter',
+  alt: 'Portrait de Badja Sidali', caption: 'Alger, 2026',
+  about_h: 'À propos',
+  about_1: 'Je suis Badja Sidali, étudiant en deuxième année d’informatique à l’USTHB, à Alger, et je me prépare à devenir ingénieur logiciel.',
+  about_2: 'Je renforce actuellement mes compétences en développement web tout en explorant d’autres domaines qui m’intéressent, notamment le design UI/UX et le montage vidéo. J’aime aussi communiquer, partager des idées et travailler avec les autres, ce que j’ai pu développer au sein de clubs étudiants et de projets d’équipe.',
+  about_3: 'Je crois qu’il y a toujours quelque chose de nouveau à apprendre, et j’aime apprendre en essayant, en collaborant avec les autres et en transformant les idées en réalisations concrètes.',
+  nav_stack: 'Stack', stack_h: 'Stack technique', stack_p: 'Ce que j’utilise pour apprendre et créer.',
+  work_h: 'Projets', tag1: '1re place',
+  w1_d: 'Une façon ludique d’apprendre l’informatique, pensée comme un jeu, pour les débutants. Je me suis occupé du design et de la présentation finale. Nous avons remporté la première place.',
+  w2_d: 'Le concept d’une plateforme centralisée qui relie les clubs scientifiques des universités d’Algérie. J’y étais designer UI/UX au sein de l’équipe CodeIT lors du GIP.',
+  w3_m: 'Design UI/UX · Projet solo de hackathon · Visual Hack',
+  w3_d: 'Un concept d’application de livraison de repas que j’ai conçu pendant Visual Hack, un hackathon UI/UX et design organisé par le CSE. J’ai conçu seul les interfaces de l’application et réalisé un prototype interactif sur Figma.',
+  w4_t: 'Autres créations', w4_d: 'Quelques autres créations visuelles pour SEC et le CSE.', w4_link: 'Voir sur Behance →',
+  w5_t: 'Ce portfolio', w5_d: 'Le site que vous visitez. Réalisé avec React, TypeScript et Vite, avec l’aide d’outils d’IA pendant que j’apprends le développement front-end.', w5_link: 'Voir le code sur GitHub →',
+  contact_h: 'Contact', contact_p: 'Écrivez-moi ou retrouvez-moi sur l’une de ces plateformes.',
+  c_email: 'E-mail', copy: '© {y} Badja Sidali',
+  copy_btn: 'Copier l’adresse e-mail', copied: 'Adresse e-mail copiée',
+  dot_aria: 'Mouloudia', paw_aria: 'Une petite patte de chat', star_aria: 'Un court dhikr',
+  dk_label: 'Un rappel', dk_next: 'Un autre dhikr', dk_close: 'Fermer'
+};
+
+const ar: Dict = {
+  title: 'باجة سيد علي – طالب إعلام آلي',
+  desc: 'باجة سيد علي، طالب في السنة الثانية إعلام آلي بجامعة USTHB بالجزائر العاصمة، ومهندس برمجيات طموح.',
+  skip: 'انتقل إلى المحتوى', nav_aria: 'التنقّل الرئيسي', nb: 'باجة سيد علي',
+  nav_about: 'نبذة', nav_work: 'أعمالي', nav_contact: 'تواصل',
+  theme: 'تبديل المظهر', lang_aria: 'اللغة',
+  n1: 'باجة', n2: 'سيد علي',
+  role: 'طالب إعلام آلي | مهندس برمجيات طموح',
+  intro: 'أنا طالب في السنة الثانية إعلام آلي بجامعة هواري بومدين للعلوم والتكنولوجيا (USTHB) بالجزائر العاصمة، أستكشف هندسة البرمجيات وتصميم الواجهات وتجربة المستخدم (UI/UX).',
+  btn_work: 'شاهد أعمالي', btn_contact: 'تواصل معي',
+  alt: 'صورة شخصية لباجة سيد علي', caption: 'الجزائر العاصمة، 2026',
+  about_h: 'نبذة عني',
+  about_1: 'أنا باجة سيد علي، طالب في السنة الثانية إعلام آلي بجامعة USTHB في الجزائر العاصمة، وأسعى لأصبح مهندس برمجيات.',
+  about_2: 'أعمل حاليًا على بناء مهاراتي في مجال تطوير الويب، وأستكشف في الوقت نفسه مجالات أخرى تهمّني، خاصة تصميم الواجهات وتجربة المستخدم (UI/UX) ومونتاج الفيديو. كما أستمتع بالتواصل وتبادل الأفكار والعمل مع الآخرين، وهو ما اكتسبته من خلال النوادي الطلابية والمشاريع الجماعية.',
+  about_3: 'أؤمن بأنّ هناك دائمًا شيئًا جديدًا يمكن تعلّمه، وأحب أن أتعلّم بالتجربة والتعاون مع الآخرين وتحويل الأفكار إلى واقع ملموس.',
+  nav_stack: 'التقنيات', stack_h: 'التقنيات والأدوات', stack_p: 'ما أستخدمه للتعلّم والبناء.',
+  work_h: 'أعمالي', tag1: 'المرتبة الأولى',
+  w1_d: 'طريقة تعلّم التقنية على شكل لعبة للمبتدئين. تكفّلت بالتصميم والعرض النهائي، وحصلنا على المرتبة الأولى.',
+  w2_d: 'فكرة منصّة واحدة تربط النوادي العلمية في جامعات الجزائر. كنت مصمم UI/UX ضمن فريق CodeIT خلال GIP.',
+  w3_m: 'تصميم UI/UX · مشروع فردي في هاكاثون · Visual Hack',
+  w3_d: 'فكرة تطبيق لتوصيل الطعام صمّمتها خلال Visual Hack، هاكاثون UI/UX والتصميم الذي نظّمه CSE. صمّمتُ واجهات التطبيق بمفردي وأنجزتُ نموذجًا أوليًا تفاعليًا باستخدام Figma.',
+  w4_t: 'أعمال تصميم أخرى', w4_d: 'بعض الأعمال البصرية الأصغر لصالح SEC و CSE.', w4_link: 'عرض على Behance ←',
+  w5_t: 'هذا الموقع الشخصي', w5_d: 'هذا هو الموقع الذي تتصفحه الآن. بُني باستخدام React وTypeScript وVite، بمساعدة أدوات الذكاء الاصطناعي أثناء تعلّمي تطوير الواجهات الأمامية.', w5_link: 'عرض الشيفرة على GitHub ←',
+  contact_h: 'تواصل', contact_p: 'راسلني أو تجدني على إحدى هذه المنصات.',
+  c_email: 'البريد الإلكتروني', copy: '{y} © باجة سيد علي',
+  copy_btn: 'نسخ عنوان البريد الإلكتروني', copied: 'تم نسخ عنوان البريد الإلكتروني',
+  dot_aria: 'المولودية', paw_aria: 'كفّ قطة صغيرة', star_aria: 'ذكر قصير',
+  dk_label: 'تذكير', dk_next: 'ذكر آخر', dk_close: 'إغلاق'
+};
+
+export const translations: Record<Lang, Dict> = { en, fr, ar };
+export const LANGS: Lang[] = ['en', 'fr', 'ar'];
