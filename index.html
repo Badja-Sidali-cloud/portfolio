@@ -1,53 +1,110 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>
-/* Runs before first paint so the page never flashes the wrong theme or language. React reads these values afterwards. */
-(function () {
-  var r = document.documentElement, t = null, l = null;
-  try { t = localStorage.getItem('theme'); } catch (e) {}
-  if (t !== 'dark' && t !== 'light') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  r.setAttribute('data-theme', t);
-  try { l = localStorage.getItem('lang'); } catch (e) {}
-  var m = /[?&]lang=(en|fr|ar)(?:&|$)/.exec(location.search);
-  if (m) l = m[1];
-  if (l !== 'en' && l !== 'fr' && l !== 'ar') {
-    var n = navigator.languages || [navigator.language || 'en'];
-    l = 'en';
-    for (var i = 0; i < n.length; i++) {
-      var c = String(n[i]).slice(0, 2).toLowerCase();
-      if (c === 'ar' || c === 'fr' || c === 'en') { l = c; break; }
-    }
-  }
-  r.lang = l;
-  r.dir = l === 'ar' ? 'rtl' : 'ltr';
-})();
-</script>
-<title>Badja Sidali – Computer Science Student</title>
-<meta name="description" content="Badja Sidali is a second-year computer science student at USTHB, Algiers, and an aspiring software engineer.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Badja Sidali">
-<meta property="og:description" content="2nd year Computer Science student ">
-<meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#f0eee7" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#11130f" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
-<link rel="icon" href="/assets/favicon.ico" sizes="48x48">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="/assets/photo.jpg">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,800&family=DM+Mono:wght@400;500&family=Amiri:wght@400&family=Reem+Kufi:wght@500;700&display=swap">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Badja Sidali","jobTitle":"Computer Science Student","alumniOf":{"@type":"CollegeOrUniversity","name":"USTHB"},"address":{"@type":"PostalAddress","addressLocality":"Algiers","addressCountry":"DZ"},"sameAs":["https://www.linkedin.com/in/badja-sid-ali-08145a360","https://github.com/Badja-Sidali-cloud","https://www.behance.net/badjasidali","https://www.instagram.com/badja.sidali/"]}
-</script>
-</head>
-<body id="top">
-<div id="root"></div>
-<noscript>Badja Sidali – Computer Science Student, USTHB, Algiers. Please enable JavaScript to view this portfolio.</noscript>
-<script type="module" src="/src/main.tsx"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <script>
+      /* Runs before first paint so the page never flashes the wrong theme or language. React reads these values afterwards. */
+      (function () {
+        var r = document.documentElement,
+          t = null,
+          l = null;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {}
+        if (t !== "dark" && t !== "light")
+          t = matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        r.setAttribute("data-theme", t);
+        try {
+          l = localStorage.getItem("lang");
+        } catch (e) {}
+        var m = /[?&]lang=(en|fr|ar)(?:&|$)/.exec(location.search);
+        if (m) l = m[1];
+        if (l !== "en" && l !== "fr" && l !== "ar") {
+          var n = navigator.languages || [navigator.language || "en"];
+          l = "en";
+          for (var i = 0; i < n.length; i++) {
+            var c = String(n[i]).slice(0, 2).toLowerCase();
+            if (c === "ar" || c === "fr" || c === "en") {
+              l = c;
+              break;
+            }
+          }
+        }
+        r.lang = l;
+        r.dir = l === "ar" ? "rtl" : "ltr";
+      })();
+    </script>
+    <title>Badja Sidali – Computer Science Student</title>
+    <meta
+      name="description"
+      content="Badja Sidali is a second-year computer science student at USTHB, Algiers, and an aspiring software engineer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Badja Sidali" />
+    <meta
+      property="og:description"
+      content="2nd year Computer Science student "
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="theme-color"
+      content="#f0eee7"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#11130f"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="/assets/favicon-32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="icon" href="/assets/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="/assets/photo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,800&family=DM+Mono:wght@400;500&family=Amiri:wght@400&family=Reem+Kufi:wght@500;700&display=swap"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Badja Sidali",
+        "jobTitle": "Computer Science Student",
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "USTHB" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Algiers",
+          "addressCountry": "DZ"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/badja-sid-ali-08145a360",
+          "https://github.com/Badja-Sidali-cloud",
+          "https://www.behance.net/badjasidali",
+          "https://www.instagram.com/badja.sidali/"
+        ]
+      }
+    </script>
+  </head>
+  <body id="top">
+    <div id="root"></div>
+    <noscript
+      >Badja Sidali – Computer Science Student, USTHB, Algiers. Please enable
+      JavaScript to view this portfolio.</noscript
+    >
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
