@@ -44,7 +44,7 @@ function Page() {
           <TechStack />
           <Contact />
         </main>
-        <Footer onMca={eggs.mca} onPaw={eggs.paw} onDhikr={dhikr.show} />
+        <Footer onMca={eggs.mca} onPaw={eggs.runCat} onDhikr={dhikr.show} />
       </div>
       <DhikrCard open={dhikr.open} idx={dhikr.idx} onNext={dhikr.show} onClose={dhikr.close} onPause={dhikr.setPaused} />
       <EasterEggLayer
