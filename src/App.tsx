@@ -22,8 +22,10 @@ function Page() {
 
   // Secret words: `mca` and `cat` as before, plus the adhkar words in Latin and Arabic letters.
   useTypedSecrets({
+    mouloudia: eggs.mca,
     mca: eggs.mca,
     cat: eggs.runCat,
+    meow: eggs.runCat,
     dhikr: dhikr.show,
     adhkar: dhikr.show,
     'ذكر': dhikr.show,
@@ -44,7 +46,7 @@ function Page() {
           <TechStack />
           <Contact />
         </main>
-        <Footer onMca={eggs.mca} onPaw={eggs.paw} onDhikr={dhikr.show} />
+        <Footer onMca={eggs.mca} onPaw={eggs.runCat} onDhikr={dhikr.show} />
       </div>
       <DhikrCard open={dhikr.open} idx={dhikr.idx} onNext={dhikr.show} onClose={dhikr.close} onPause={dhikr.setPaused} />
       <EasterEggLayer
