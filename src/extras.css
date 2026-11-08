@@ -11,8 +11,6 @@ footer.site .pulse:after{content:"";position:absolute;inset:0;border-radius:50%;
 footer.site .totop{all:unset;cursor:pointer;font:.82rem var(--mono);padding:.25rem .7rem;border:1.5px solid var(--ink);transition:background .2s,color .2s,transform .2s}
 footer.site .totop:hover,footer.site .totop:focus-visible{background:var(--ink);color:var(--bg);transform:translateY(-2px)}
 footer.site .totop:focus-visible{outline:3px solid var(--green);outline-offset:3px}
-footer.site .fmsg{margin:1.1rem 0 .2rem;color:var(--mute);font-size:.8rem}
-footer.site .fterm{margin:0;color:var(--mute);font-size:.8rem}
 @media (prefers-reduced-motion:no-preference){
   .hero h1 .hi .wave{animation:wave 2.4s ease-in-out .8s 2}
   footer.site .pulse:after{animation:ping 2s ease-out infinite}

@@ -34,8 +34,6 @@ export default function Footer({ onMca, onPaw, onDhikr }: Props) {
           <button className="ico" type="button" aria-label={t.paw_aria} onClick={onPaw}>🐾</button>
         </span>
       </div>
-      <p className="fmsg">{t.foot_built}</p>
-      <p className="fterm" aria-hidden="true" dir="ltr">~/badja-sidali $ <span className="cur" /></p>
     </footer>
   );
 }

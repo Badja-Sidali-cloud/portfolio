@@ -12,7 +12,7 @@ export default function Hero() {
       <NetworkCanvas />
       <TypingKicker />
       <h1>
-        <span className="hi">{t.hi} <span className="wave" aria-hidden="true">👋</span></span>
+        <span className="hi"><span className="wave" aria-hidden="true">👋</span> {t.hi}</span>
         <span>{t.n1}</span>
         <span>{t.n2}</span>
       </h1>
