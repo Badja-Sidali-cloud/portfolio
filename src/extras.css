@@ -1,0 +1,23 @@
+/* Greeting + footer additions. Loaded after the main styles; selectors are specific enough not to need order. */
+.hero h1 .hi{display:block;font:500 clamp(1rem,2.4vw,1.35rem)/1.2 var(--mono);letter-spacing:0;color:var(--green);margin:0 0 .6rem}
+.hero h1 .hi .wave{display:inline-block;transform-origin:70% 70%}
+footer.site{display:block;padding:0 0 2.2rem}
+footer.site .fbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:.9rem 0;margin-bottom:.9rem;border-bottom:1.5px dashed color-mix(in srgb,var(--ink) 25%,transparent)}
+footer.site .frow{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+footer.site .stat{display:inline-flex;align-items:center;gap:.6rem;font-size:.82rem}
+footer.site .stat time{color:var(--green);font-variant-numeric:tabular-nums}
+footer.site .pulse{position:relative;display:inline-block;width:.5rem;height:.5rem;border-radius:50%;background:var(--green)}
+footer.site .pulse:after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--green)}
+footer.site .totop{all:unset;cursor:pointer;font:.82rem var(--mono);padding:.25rem .7rem;border:1.5px solid var(--ink);transition:background .2s,color .2s,transform .2s}
+footer.site .totop:hover,footer.site .totop:focus-visible{background:var(--ink);color:var(--bg);transform:translateY(-2px)}
+footer.site .totop:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+footer.site .fmsg{margin:1.1rem 0 .2rem;color:var(--mute);font-size:.8rem}
+footer.site .fterm{margin:0;color:var(--mute);font-size:.8rem}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1 .hi .wave{animation:wave 2.4s ease-in-out .8s 2}
+  footer.site .pulse:after{animation:ping 2s ease-out infinite}
+  @keyframes wave{0%,50%,100%{transform:none}10%{transform:rotate(16deg)}20%{transform:rotate(-8deg)}30%{transform:rotate(14deg)}40%{transform:rotate(-4deg)}}
+  @keyframes ping{to{transform:scale(3.2);opacity:0}}
+}
+
+footer.site .dots{display:flex;align-items:center}

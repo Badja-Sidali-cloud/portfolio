@@ -1,3 +1,4 @@
+import '../extras.css';
 import { useLang } from '../i18n';
 import { assetUrl } from '../lib';
 import Decode from './Decode';
@@ -11,6 +12,7 @@ export default function Hero() {
       <NetworkCanvas />
       <TypingKicker />
       <h1>
+        <span className="hi">{t.hi} <span className="wave" aria-hidden="true">👋</span></span>
         <span>{t.n1}</span>
         <span>{t.n2}</span>
       </h1>

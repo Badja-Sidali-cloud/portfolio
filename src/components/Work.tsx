@@ -1,3 +1,4 @@
+import Decode from './Decode';
 import type { Dict } from '../data/translations';
 import { useLang } from '../i18n';
 import { useReveal } from '../hooks/useReveal';
@@ -27,7 +28,7 @@ export default function Work() {
   return (
     <section id="work">
       <div className="split">
-        <h2 className="rv" ref={headRef}>{t.work_h}</h2>
+        <h2 className="rv" ref={headRef}><Decode text={t.work_h} onView /></h2>
         <ul className="work rv" ref={listRef}>
           {PROJECTS.map((p) => (
             <li key={p.title}>

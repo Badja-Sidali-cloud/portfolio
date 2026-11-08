@@ -1,3 +1,4 @@
+import Decode from './Decode';
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react';
 import { GLYPHS } from '../data/stackIcons';
 import { useLang } from '../i18n';
@@ -73,7 +74,7 @@ export default function TechStack() {
   return (
     <section id="stack">
       <div className="split">
-        <h2>{t.stack_h}</h2>
+        <h2><Decode text={t.stack_h} onView /></h2>
         <div className={`stack${seen ? ' in' : ''}`} ref={ref}>
           <p className="stk-p">{t.stack_p}</p>
           <div className="term" dir="ltr">

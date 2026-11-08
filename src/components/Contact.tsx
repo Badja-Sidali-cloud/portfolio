@@ -1,3 +1,4 @@
+import Decode from './Decode';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { useLang } from '../i18n';
 import { useReveal } from '../hooks/useReveal';
@@ -70,7 +71,7 @@ export default function Contact() {
   return (
     <section id="contact" className="rv" ref={ref}>
       <div className="split">
-        <h2>{t.contact_h}</h2>
+        <h2><Decode text={t.contact_h} onView /></h2>
         <div>
           <p className="cp">{t.contact_p}</p>
           <ul className="soc">

@@ -1,3 +1,4 @@
+import Decode from './Decode';
 import { useLang } from '../i18n';
 import { useReveal } from '../hooks/useReveal';
 
@@ -7,7 +8,7 @@ export default function About() {
   return (
     <section id="about" className="rv" ref={ref}>
       <div className="split">
-        <h2>{t.about_h}</h2>
+        <h2><Decode text={t.about_h} onView /></h2>
         <div className="about">
           <p>{t.about_1}</p>
           <p>{t.about_2}</p>
