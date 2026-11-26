@@ -14,9 +14,10 @@ interface Project {
 }
 
 const PROJECTS: Project[] = [
-  { title: 'Code Souls', meta: 'GDG HACK 3.0', tag: 'tag1', desc: 'w1_d' },
-  { title: 'GCL', meta: 'GDG Clubs Link', desc: 'w2_d' },
+  { title: 'Code Souls', meta: 'GDG HACK 3.0', tag: 'tag1', desc: 'w1_d', link: { href: 'https://github.com/Badja-Sidali-cloud/Code-Souls-FRONTEND-', label: 'w_repo' } },
+  { title: 'GCL', meta: 'GDG Clubs Link', desc: 'w2_d', link: { href: 'https://github.com/Badja-Sidali-cloud/club-student-hub', label: 'w_repo' } },
   { title: 'Eat Around', meta: 'Visual Hack', metaKey: 'w3_m', desc: 'w3_d' },
+  { title: 'w6_t', translatedTitle: true, meta: 'C', metaKey: 'w6_m', desc: 'w6_d', link: { href: 'https://github.com/Badja-Sidali-cloud/gestionnaire-de-notes-usthb', label: 'w_repo' } },
   { title: 'w5_t', translatedTitle: true, meta: 'React · TypeScript · Vite', desc: 'w5_d', link: { href: 'https://github.com/Badja-Sidali-cloud/portfolio', label: 'w5_link' } },
   { title: 'w4_t', translatedTitle: true, meta: 'SEC, CSE', desc: 'w4_d', link: { href: 'https://www.behance.net/badjasidali', label: 'w4_link' } },
 ];
